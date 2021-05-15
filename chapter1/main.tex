@@ -187,7 +187,7 @@ We attribute this difference in results from a previous study of \ahb{\textit{sc
 
 
 \section*{Materials and Methods}
-\ec{Statistical results and figures were created in R \cite{R:2019} with use of the tidyverse \cite{wickham:2019tidy} packages. Other scripts were run using GNU parallel \cite{tange:2018parallel}.}
+\ec{Statistical results and figures were created in R \cite{R:2019} with use of the tidyverse \cite{R_tidyverse} packages. Other scripts were run using GNU parallel \cite{tange:2018parallel}.}
 
 \subsection*{Sampling}
 We sampled individual foraging honey bees across two hybrid zones, located at the transitions to temperate climates in North and South America. We sampled at least 10 bees each from 12 populations in California and 21 populations in Argentina (see maps, Fig \ref{fig_map}).
@@ -266,24 +266,27 @@ For within-ancestry diversity estimates, we used our ancestry calls to identify 
 To test whether selection had favored specific haplotypes, or \scutellata\ ancestry more generally, within shared outlier regions for high \A\ ancestry, we calculated population differentiation (F\textsubscript{ST}) between the A reference panel and A haplotypes within each hybrid zone. We also calculated within-ancestry F\textsubscript{ST} between the two hybrid zones, to assess whether the same A haplotypes rose in frequency on both continents. Likewise, for the large high M outlier on chromosome 11, we calculated pairwise differentiation within M ancestry between North America, South America, and the M reference panel. We similarly calculated F\textsubscript{ST} for all three contrasts between A, C, and M, reference panels across these outlier regions, to test for signatures of historical selection and divergence between these ancestry groups.
 For F\textsubscript{ST} calculations, we estimated within-ancestry allele frequencies for North and South America using the same method described above for within-ancestry $\pi$, except pooling individuals by hybrid zone rather than population. We used Hudson's estimator for F\textsubscript{ST} (Eq 10 in \cite{Bhatia:2013im}), calculated the average per-SNP F\textsubscript{ST} within sliding 50kb windows stepping every 1kb across ancestry outlier regions, and only included SNPs with coverage for at least two individuals for both populations in the contrast and windows with at least 10 SNPs.
 
-\section*{Ethics statement}
+\section*{Ethics Statement}
 Honey bee samples from California were collected with permission from the California Fish and Wildlife (wildlife.ca.gov; permit ID D-0023599526-1). Honey bee samples from Argentina were collected and transferred to the University of California, Davis, for genomic analysis with authorization from Argentina’s National Institute of Agricultural Technology (Instituto Nacional de Tecnología Agropecuaria, INTA Argentina, www.argentina.gob.ar/inta, document ID 25401; MTA No. 2018-0374-M filed at UC Davis). This study did not involve any endangered species, protected species or protected areas.
 
 \section*{Acknowledgements}
 We thank the National Institute of Agricultural Technology (INTA), Argentina, for the use of bee samples from Argentina. Thank you to Stefan Fuchs and the Oberursel Collection for sharing wing images of A, C and M reference bees. Thank you to Brock Harpur for making marker sequences from previous Hunt lab QTL studies publicly available on Data Dryad. Thank you to Julie Cridland and Nicholas Saleh for early tips on sampling and California bees, to Philipp Brand, Brenda Cameron, and Anne Lorant for sharing protocols and advice on lab work, to Jodie Jacobs and Petra Silverman for help phenotyping wing traits, and to Kelsey Lyberger, Roisin McMullen and Jodie Jacobs for their help in the field netting bees. \ecec{Thank you to Jennifer Van Wyk, Hannah Whitehead, and Ang Roell for useful conversations about how scientists and the public describe \africanized\ hybrid honey bees and the broader impacts.} Thank you to Daniela Zarate\ec{, Jeffrey Ross-Ibarra, Michael Turelli, Peter Ralph and to members of the Coop, Ramírez, and Ralph labs} for insightful discussions and \ec{feedback on earlier drafts of the manuscript}.
 
+\section*{Associated Publication}
+Chapter 1 was published October 19, 2020: \newline
+Calfee E, Agra MN, Palacio, MA, Ramírez SR, Coop G. Selection and hybridization shaped the rapid spread of African honey bee ancestry in the Americas. PLOS Genetics. 2020; \\doi:10.1371/journal.pgen.1009038.
 
 \medskip
 
 %This is where your bibliography is generated. Make sure that your .bib file is actually called library.bib
-\bibliography{chapter1/library}
+%\bibliography{chapter1/library}
 
 
 %This defines the bibliographies style. Search online for a list of available styles.
-\bibliographystyle{plos2015}
+%\bibliographystyle{plos2015}
 
 \newpage
-\section*{Supporting information}
+\section*{Supporting Information}
 
 \paragraph*{Table 1.1}
 \label{table_bee_gps}
