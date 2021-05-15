@@ -1,0 +1,94 @@
+% Use this file to load additional packages or define macro
+% commands that will be used in the dissertation.
+%
+
+\usepackage{graphicx}
+\usepackage{caption} %%% optional but probably necessary
+\usepackage{subcaption} %%% optional but probably necessary
+
+% packages/settings imported from bees paper:
+
+% Use adjustwidth environment to exceed column width (see example table in text)
+%\usepackage{changepage}
+% Use Unicode characters when possible
+\usepackage[utf8x]{inputenc}
+% textcomp package and marvosym package for additional characters
+\usepackage{textcomp,marvosym}
+% cite package, to clean up citations in the main text. Do not remove.
+\usepackage{cite}
+% Use nameref to cite supporting information files (see Supporting Information section for more info)
+\usepackage{nameref,hyperref}
+% line numbers
+%\usepackage[right]{lineno}
+% ligatures disabled; improves typesetting in LaTeX
+%\usepackage{microtype}
+%\DisableLigatures[f]{encoding = *, family = * }
+% color can be used to apply background shading to table cells only
+
+% Bold the ‘Figure #' in the caption and separate it from the title/caption with a period
+% Captions will be left justified
+%\usepackage[aboveskip=1pt,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=off]{caption}
+
+% Use the PLoS provided BiBTeX style
+\bibliographystyle{plos2015}
+% Remove brackets from numbering in List of References
+%\makeatletter
+%\renewcommand{\@biblabel}[1]{\quad#1.}
+%\makeatother
+
+
+%\usepackage[english]{babel}
+
+
+% degree symbol
+\usepackage{gensymb}
+
+% fractions:
+\usepackage{nicefrac}
+
+
+% use \textcolor{color}{text} for colored text (e.g. highlight to-do areas)
+\usepackage{color}
+\newcommand{\ec}[1]{{\color{black} #1}}
+\newcommand{\edit}[1]{{\color{black} #1}}
+\newcommand{\ecec}[1]{{\color{black} #1}}
+\newcommand{\ahb}[1]{{\color{black} #1}}
+\newcommand{\africanized}{\ahb{\textit{scutellata}-European}}
+\newcommand{\hyb}{\ahb{hybrid}}
+\newcommand{\anc}{\ahb{ancestry}}
+\newcommand{\A}{\ahb{A}}
+\newcommand{\scutellata}{\ahb{\textit{scutellata}}} 
+
+\usepackage[colorinlistoftodos]{todonotes}  
+
+% define custom colors (this one is for figure captions)
+\definecolor{Gray}{gray}{.25}
+
+\usepackage{amsmath,amssymb}
+
+% math operators
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Normal}{Normal}
+\DeclareMathOperator{\Beta}{Beta}
+\DeclareMathOperator{\MVN}{MVN}
+\DeclareMathOperator{\Uniform}{Uniform}
+\DeclareMathOperator{\logit}{logit}
+\DeclareMathOperator{\logistic}{logistic}
+
+% label bibliography as 'references'
+\renewcommand{\bibname}{References}
+%\usepackage[nottoc,notlot,notlof]{tocbibind}
+% downgrade the bibliography from a chapter to a subsection
+%\usepackage{etoolbox}
+%\makeatletter
+%\patchcmd{\thebibliography}{%
+%	\chapter*{\bibname}\@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}}{%
+%	\section{References}}{}{}
+%\makeatother
+
+\usepackage{etoolbox}
+
+\apptocmd{\thebibliography}{\csname phantomsection\endcsname\addcontentsline{toc}{section}{\bibname}}{}{}
+
+

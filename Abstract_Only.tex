@@ -1,0 +1,52 @@
+% This document is designed to conform to the style and layout
+% guidelines stipulated in the document "Preparing and Filing the
+% Thesis or Dissertation" at
+% 
+% http://www.gradstudies.ucdavis.edu/students/filing.html
+% 
+% and in the sample dissertation title page at
+% 
+% http://www.gradstudies.ucdavis.edu/students/sample_title.html
+% 
+% ---Tyrrell McAllister
+%
+
+\input{LayoutPreamble.tex}
+
+\input{MacrosPreamble.tex}
+
+\begin{document}
+   \frontmatter
+   
+   % 2020 EDIT: Moved name, date, program to Abstract_Only
+   {\singlespacing
+   \begin{flushright}
+      Tyrrell B. McAllister \\
+      June 2006 \\
+      Meteorology \\
+   \end{flushright}
+   }
+
+   \bigskip
+
+   %%%\pagestyle{prelim}
+   
+   % Redefine plain page style so that the first pages of chapters
+   % have desired page style.
+   %
+   \fancypagestyle{plain}{%
+      \fancyhf{}
+      \rhead{\thepage}
+   }%
+   %%%\input{TitlePage.tex}
+   %%%\newpage
+   
+   % Begin Double Spacing
+   %
+   \doublespacing
+	
+	 \pagestyle{abstract2}
+   
+	 \thispagestyle{abstract1}
+   \input{Abstract.tex}
+\end{document}
