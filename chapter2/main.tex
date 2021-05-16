@@ -144,7 +144,7 @@ To test whether such negative selection is shaping patterns of introgression gen
 We then ran NGSAdmix on the SNPs within each quintile separately, using K=2 clusters, to estimate maize and \mexicana ancestry proportions. We used a recombination map from maize \cite{Ogut:2015df}, which is likely to be correlated with other \textit{Zea} subspecies at least at the level of genomic quintiles, but a limitation of this analysis is that we do not have a recombination map for hybrid populations which means that e.g. segregating structural inversions will not necessarily show low recombination rates.
 
 Our results from sympatric maize landraces are consistent with selection against \textit{mexicana} introgression at many loci genomewide, resulting in lower introgressed ancestry in regions of the genome with lower recombination rates (Fig \ref{K2_by_r}A). 
-We find a positive Spearman's rank correlation between recombination rate quintile and mean introgressed \mexicana ancestry proportion ($\rho = 1,\ \text{CI}_{95}[0.85,\ 1.00]$), \ec{reflecting the fact that introgression increases monotonically across quintiles.}  \ec{A} similar analysis using $f_4$ statistics replicates this result (see methods, Fig \ref{f4_tree}-\ref{f4_maize_by_cd} and \nameref{spearmans_rho_f4_sympatric_maize_pop22}). The higher elevation maize populations show this pattern most starkly; while all individuals have low \mexicana ancestry for the lowest recombination rate quintile, some high elevation populations have individuals with over 40\% introgressed ancestry for the highest recombination rate quintile (Fig \ref{K2_by_r}B). Using a linear-model fit, we found a significant interaction between recombination rate quintile and the slope of ancestry across elevation  in sympatric maize (\nameref{tbl_elev_r_interaction_5}). 
+We find a positive Spearman's rank correlation between recombination rate quintile and mean introgressed \mexicana ancestry proportion ($\rho = 1,\ \text{CI}_{95}[0.85,\ 1.00]$), \ec{reflecting the fact that introgression increases monotonically across quintiles.}  \ec{A} similar analysis using $f_4$ statistics replicates this result (see methods, Fig \ref{f4_tree}-\ref{f4_maize_by_cd} and \nameref{spearmans_rho_f4_sympatric_maize_pop22}). The higher elevation maize populations show this pattern most starkly; while all individuals have low \mexicana ancestry for the lowest recombination rate quintile, some high elevation populations have individuals with over 40\% introgressed ancestry for the highest recombination rate quintile (Fig \ref{K2_by_r}B). Using a linear-model fit, we found a significant interaction between recombination rate quintile and the slope of ancestry across elevation in sympatric maize (\nameref{tbl_elev_r_interaction_5}). 
 This is again consistent with low-recombination rate regions having a stronger effect of linked selection reducing \mexicana ancestry, with higher elevation maize landraces either experiencing larger amounts of gene flow or retaining more ancestry due to adaptive processes in high recombination regions (Fig \ref{K2_by_r_elev_lm}).
 
 
@@ -469,7 +469,7 @@ The authors would like to acknowledge funding from NSF award number 1546719 to J
 \medskip
 
 \section*{Associated Publication}
-An earlier version of Chapter 2 was posted as a preprint on BioRxiv on March 5, 2021. This preprint will be updated with a link to the final peer-reviewed article upon publication: \newline
+An earlier version of Chapter 2 was posted as a preprint to BioRxiv on March 5, 2021. This preprint will be updated with a link to the final peer-reviewed article upon publication: \newline
 
 Calfee E, Gates D, Lorant A, Perkins TA, Coop G, Ross-Ibarra J. Selective sorting of ancestral introgression in maize and teosinte along an elevational cline. BioRxiv. 2021;\\
 doi:10.1101/2021.03.05.434040
@@ -489,10 +489,15 @@ doi:10.1101/2021.03.05.434040
 \paragraph*{Table 2.1}
 \label{population_metadata}
 {\bf Population metadata.} 
+\input{chapter2/tables/population_metadata}
+\newpage
 
 \paragraph*{Table 2.2}
 \label{parv50}
 {\bf Parviglumis SRA IDs.} 
+\input{chapter2/tables/parviglumis_50_SRA_IDs}
+
+\newpage
 
 \paragraph*{Table 2.3}
 \label{spearmans_rho_ngsadmix}
@@ -519,11 +524,13 @@ doi:10.1101/2021.03.05.434040
 {\bf Spearman's rank correlation between mean \mexicana local ancestry and recombination rate (or coding bp per cM) at 1 cM genomic window resolution.} Confidence intervals are constructed using the percentile method and 10,000 bootstrap replicates created by randomly re-sampling 1 cM windows within quintiles.
 \input{chapter2/tables/spearmans_rho_local_ancestry}
 
-\paragraph*{Table 2.8}
-\label{genes_outliers}
-{\bf Domestication genes and overlap with low introgression regions.}
-\input{chapter2/tables/domestication_genes}
 \newpage
+
+%\paragraph*{Table 2.8}
+%\label{genes_outliers}
+%{\bf Domestication genes and overlap with low introgression regions.}
+\input{chapter2/tables/domestication_genes} % table title is within this .tex
+\clearpage
 
 
 %\begin{figure}[h!]
