@@ -76,7 +76,7 @@
    \renewcommand{\headrulewidth}{0pt} %{0.4pt}
 	 \fancyheadoffset[R]{0in}
    \pagenumbering{arabic}
-   \fancyhf{}
+   \fancyhf{} % Erin: no page numbering on first page of abstract-only
 }
 
 %%% for pages 2+ of Abstract_Only.tex
@@ -85,7 +85,8 @@
    \fancyheadoffset[R]{0in}
 	 \pagenumbering{arabic}
    \fancyhf{}
-   \rhead{\thepage}
+   %\rhead{\thepage}
+   \cfoot{\thepage} % Erin: number any pages >1 in abstract-only at bottom center
 }
 
 % Number figures, tables, and equations so that the chapter is
