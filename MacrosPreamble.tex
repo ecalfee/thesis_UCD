@@ -91,24 +91,9 @@
 \hyphenation{genome-wide pre-print}
 
 
-% PLoS Genetics template:
 
 % label bibliography as 'references'
-\renewcommand{\bibname}{References}
-%\usepackage[nottoc,notlot,notlof]{tocbibind}
-% downgrade the bibliography from a chapter to a subsection
-%\usepackage{etoolbox}
-%\makeatletter
-%\patchcmd{\thebibliography}{%
-%	\chapter*{\bibname}\@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}}{%
-%	\section{References}}{}{}
-%\makeatother
+\addto{\captionsenglish}{\renewcommand{\bibname}{References}}
 
-%\usepackage{etoolbox}
-
-%\apptocmd{\thebibliography}{\csname phantomsection\endcsname\addcontentsline{toc}{section}{\bibname}}{}{}
-
-\usepackage{longtable} % for 'longtable' environment
-\usepackage{pdflscape} % for 'landscape' environment
 \usepackage{setspace} % sets spacing for tables
 \renewcommand{\arraystretch}{1.2} % increase spacing in tables
